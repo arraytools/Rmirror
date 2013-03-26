@@ -6,6 +6,13 @@ mkdir -p ~/Rmirror/CRAN/src/contrib
 mkdir -p ~/Rmirror/Bioc
 mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/bin/windows
 mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/src
+# Optionally html, vignettes, news, licenses, readmes
+mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/html
+mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/vignettes
+mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/news
+mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/licenses
+mkdir -p ~/Rmirror/Bioc/packages/2.11/bioc/readmes
+# End of optional
 mkdir -p ~/Rmirror/Bioc/packages/2.11/data/annotation/bin/windows
 mkdir -p ~/Rmirror/Bioc/packages/2.11/data/annotation/src/contrib
 mkdir -p ~/Rmirror/Bioc/packages/2.11/data/experiment/bin/windows/contrib/2.15

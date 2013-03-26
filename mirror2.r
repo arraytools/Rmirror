@@ -17,6 +17,12 @@ rsync -zrtlv  --delete bioconductor.org::2.11/bioc/bin/windows/ ~/Rmirror/Bioc/p
 # rsync -zrtlv  --delete bioconductor.org::2.11/bioc/src/ ~/Rmirror/Bioc/packages/2.11/bioc/src
 rsync -zrtlv  --delete bioconductor.org::2.11/bioc/src/contrib/PACKAGES ~/Rmirror/Bioc/packages/2.11/bioc/src/contrib/
 rsync -zrtlv  --delete bioconductor.org::2.11/bioc/src/contrib/PACKAGES.gz ~/Rmirror/Bioc/packages/2.11/bioc/src/contrib/
+# Optionally the html part
+rsync -zrtlv  --delete bioconductor.org::2.11/bioc/html/ ~/Rmirror/Bioc/packages/2.11/bioc/html
+rsync -zrtlv  --delete bioconductor.org::2.11/bioc/vignettes/ ~/Rmirror/Bioc/packages/2.11/bioc/vignettes
+rsync -zrtlv  --delete bioconductor.org::2.11/bioc/news/ ~/Rmirror/Bioc/packages/2.11/bioc/news
+rsync -zrtlv  --delete bioconductor.org::2.11/bioc/licenses/ ~/Rmirror/Bioc/packages/2.11/bioc/licenses
+rsync -zrtlv  --delete bioconductor.org::2.11/bioc/readmes/ ~/Rmirror/Bioc/packages/2.11/bioc/readmes
 
 # Annotation (aka data/annotation) directory
 rsync -zrtlv --delete bioconductor.org::2.11/data/annotation/bin/windows/ ~/Rmirror/Bioc/packages/2.11/data/annotation/bin/windows
