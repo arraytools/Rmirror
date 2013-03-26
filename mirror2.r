@@ -7,6 +7,10 @@ rsync -rtlzv --delete cran.r-project.org::CRAN/src/contrib/PACKAGES ~/Rmirror/CR
 rsync -rtlzv --delete cran.r-project.org::CRAN/src/contrib/PACKAGES.gz ~/Rmirror/CRAN/src/contrib/
 wget -N http://www.bioconductor.org/biocLite.R -P ~/Rmirror/Bioc
 
+# Bioconductor front page 'BiocViews'
+rsync -zrtlv  --delete bioconductor.org::2.11/BiocViews.html ~/Rmirror/Bioc/packages/2.11/
+rsync -zrtlv  --delete bioconductor.org::2.11/index.html ~/Rmirror/Bioc/packages/2.11/
+
 # Bioconductor Software (aka bioc) directory
 rsync -zrtlv  --delete bioconductor.org::2.11/bioc/bin/windows/ ~/Rmirror/Bioc/packages/2.11/bioc/bin/windows
 # Either rsync whole src directory or just essential files
