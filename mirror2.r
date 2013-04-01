@@ -6,6 +6,9 @@ rsync -rtlzv --delete cran.r-project.org::CRAN/bin/windows/contrib/2.15/ ~/Rmirr
 rsync -rtlzv --delete cran.r-project.org::CRAN/src/contrib/PACKAGES ~/Rmirror/CRAN/src/contrib/
 rsync -rtlzv --delete cran.r-project.org::CRAN/src/contrib/PACKAGES.gz ~/Rmirror/CRAN/src/contrib/
 wget -N http://www.bioconductor.org/biocLite.R -P ~/Rmirror/Bioc
+# Optionally the source directory for the current version and 2.15.3 recommended packages
+rsync -rtlzv --delete cran.r-project.org::CRAN/src/contrib/*.tar.gz ~/Rmirror/CRAN/src/contrib/
+rsync -rtlzv --delete cran.r-project.org::CRAN/src/contrib/2.15.3 ~/Rmirror/CRAN/src/contrib/
 
 # Bioconductor front page 'BiocViews'
 rsync -zrtlv  --delete bioconductor.org::2.11/BiocViews.html ~/Rmirror/Bioc/packages/2.11/
