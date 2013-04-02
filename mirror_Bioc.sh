@@ -2,6 +2,8 @@
 # mirror2.sh
 # This is part 2 of 2 R scripts for mirroring Windows' part of CRAN and Bioconductor
 # MCL 3/26/2013
+
+wget -N http://www.bioconductor.org/biocLite.R -P ~/Rmirror/Bioc
 # Bioconductor front page 'BiocViews'
 rsync -zrtlv  --delete bioconductor.org::2.11/BiocViews.html ~/Rmirror/Bioc/packages/2.11/
 rsync -zrtlv  --delete bioconductor.org::2.11/index.html ~/Rmirror/Bioc/packages/2.11/
