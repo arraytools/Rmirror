@@ -15,4 +15,4 @@ r <- c(BRB=file.path(hostname, 'CRAN'), r)
 options("BioC_mirror" = file.path(hostname, 'Bioc'))
 source(file.path(hostname, 'Bioc/biocLite.R')) # instead of source("http://bioconductor.org/biocLite.R")
 # This above line source('biocLite.R') can be placed either before or after options() command.
-biocLite("aCGH")
+biocLite("aCGH", ask = FALSE)
