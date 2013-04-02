@@ -5,8 +5,8 @@ The repository contains an instruction to create an R mirror for Windows's contr
 
 ## Files
 
-* `mirror1.r` was used to create necessary directories.
-* `mirror2.r` was used to rsync files from CRAN and Bioconductor.
+* `mirror1.sh` was used to create necessary directories.
+* `mirror2.sh` was used to rsync files from CRAN and Bioconductor.
 * `setup.sh` contains a shell script to create soft link in apache server.
 * `test.r` was used to test the new R repository.
 
