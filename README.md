@@ -34,12 +34,13 @@ options("BioC_mirror" = "http://SERVERNAME/Bioc")
 
 ## Note
 
-* As of R 2.15.x and Bioc 2.11, the mirror for Windows part takes about 31GB.
+* As of R 2.15.x and Bioc 2.11, the mirror for Windows part takes about 31~50 GB including source code in CRAN.
 * If there is a connection problem, check folder attributes
 ```bash
 chmod -R 755 ~/Rmirror/CRAN/bin
 ```
 * If we have a mirror on local network, we can take an advantage of it. For example,
 ```bash
-rsync -zrtlv --delete USERNAME@ANOTHERIP:Rmirror/Bioc/packages/2.11/data/ ~/Rmirror/Bioc/packages/2.11/data
+rsync -zrtlv --delete USERNAME@ANOTHERIP:Rmirror/Bioc/ ~/Rmirror/Bioc
 ```
+* For new updated packages in CRAN, it is possible the binary packages for MAC & Windodws are not updated yet.
