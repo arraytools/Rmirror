@@ -10,6 +10,27 @@ The repository contains an instruction to create an R mirror for Windows's contr
 * `setup.sh` contains a shell script to create soft link in apache server.
 * `test.r` was used to test the new R repository.
 
+## Installation
+
+```bash
+git clone https://github.com/arraytools/Rmirror.git
+```
+
+## Usage
+
+```bash
+cd Rmirror
+chmod +x setup.sh
+chmod +x mirror1.sh
+chmod +x mirror2.sh
+```
+Then manually open ~/Rmirror/Bioc/biocLite.R, modify and uncomment two lines so packages need to be updated 
+coming from the mirror.
+```R
+options("repos" = c(CRAN="http://SERVERNAME/CRAN"))
+options("BioC_mirror" = "http://SERVERNAME/Bioc")
+```
+
 ## Note
 
 * As of R 2.15.x and Bioc 2.11, the mirror for Windows part takes about 31GB.
