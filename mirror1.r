@@ -1,4 +1,5 @@
-# mirro1.R
+#! /bin/bash
+# mirro1.sh
 # This is part 1 of 2 R scripts for mirroring Windows' part of CRAN and Bioconductor
 # MCL 3/26/2013
 mkdir -p ~/Rmirror/CRAN/bin/windows/contrib/2.15

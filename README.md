@@ -17,3 +17,7 @@ The repository contains an instruction to create an R mirror for Windows's contr
 ```bash
 chmod -R 755 ~/Rmirror/CRAN/bin
 ```
+* If we have a mirror on local network, we can take an advantage of it. For example,
+```bash
+rsync -zrtlv --delete USERNAME@ANOTHERIP:Rmirror/Bioc/packages/2.11/data/ ~/Rmirror/Bioc/packages/2.11/data
+```

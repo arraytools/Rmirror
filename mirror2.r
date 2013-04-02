@@ -1,4 +1,5 @@
-# mirror2.R
+#! /bin/bash
+# mirror2.sh
 # This is part 2 of 2 R scripts for mirroring Windows' part of CRAN and Bioconductor
 # MCL 3/26/2013
 # CRAN packages
