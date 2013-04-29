@@ -5,9 +5,8 @@ The repository contains an instruction to create an R mirror for Windows's contr
 
 ## Files
 
-* `mirror1.sh` was used to create necessary directories.
-* `mirror2.sh` was used to rsync files from CRAN and Bioconductor. For convenience, this file is splitted into
-  `mirror_CRAN.sh` and `mirror_Bioc.sh`.
+* `createdir.sh` was used to create necessary directories.
+* `mirror_CRAN.sh` and `mirror_Bioc.sh` were used to rsync files from CRAN and Bioconductor.
 * `setup.sh` contains a shell script to create soft link in apache server.
 * `test.r` was used to test the new R repository.
 
@@ -22,8 +21,9 @@ git clone https://github.com/arraytools/Rmirror.git
 ```bash
 cd Rmirror
 chmod +x setup.sh
-chmod +x mirror1.sh
-chmod +x mirror2.sh
+chmod +x createdir.sh
+chmod +x mirror_CRAN.sh
+chmod +x mirror_Bioc.sh
 ```
 Then manually open ~/Rmirror/Bioc/biocLite.R, modify and uncomment two lines so packages need to be updated 
 coming from the mirror.
